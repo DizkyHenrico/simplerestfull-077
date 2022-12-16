@@ -12,7 +12,11 @@ package project04.project04;
 public class Product {
   private String id;
   private String name;
-
+  private Integer price;
+  private Integer number;
+  private Integer total;
+  
+          
     public String getId() {
         return id;
     }
@@ -27,5 +31,30 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
-    }   
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(Integer total) {
+        this.total = price * number;
+    }
+    
+
+
+
+
 }
