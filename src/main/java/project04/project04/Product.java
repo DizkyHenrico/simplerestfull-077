@@ -49,7 +49,7 @@ public class Product {
         return total;
     }
 
-    public void setTotal(Integer total) {
+    public void setTotal() {
         this.total = price * number;
     }
     
